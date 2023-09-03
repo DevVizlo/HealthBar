@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class InfoCharacter : MonoBehaviour
 {
-    public float MaxHp = 1f;
+    private float _maxHp = 1f;
+    private float _minHp = 0f;
+
     public float Hp;
+    public float MaxHp => _maxHp;
+    public float MinHp => _minHp;
 }
